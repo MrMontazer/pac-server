@@ -34,7 +34,7 @@ The server will start on port 80 by default.
 Build and run using Docker Compose:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Or build and run using Docker directly:
