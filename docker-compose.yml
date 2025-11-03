@@ -1,0 +1,8 @@
+services:
+  pac:
+    build: .
+    image: pac:latest
+    ports:
+      - 80:80
+    volumes:
+      - ./:/app

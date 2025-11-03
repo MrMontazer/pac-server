@@ -1,0 +1,23 @@
+proxy:
+  - "http 1.1.1.1:1080" # HTTP PROXY
+  # - "https 1.1.1.1:1080" # HTTPS PROXY
+  # - "socks5 1.1.1.1:1080" # SOCKS5 PROXY
+  # ...
+
+always_direct:
+  - "localhost"
+  - "127.*.*.*"
+  - "192.168.*.*"
+  # - "*.com"
+  # - "example.com"
+  # - ".example.com"
+  # - "*.example.com"
+  # - "sub.example.com"
+
+always_proxy:
+  # - ".google.com"
+
+fallback: # Try proxy first then DIRECT
+  # - "example.com"
+
+default: FALLBACK # FALLBACK | PROXY | DIRECT | ...
